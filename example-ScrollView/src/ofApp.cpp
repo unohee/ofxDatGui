@@ -17,7 +17,7 @@ void ofApp::setup()
     addItem->onButtonEvent(this, &ofApp::onAddNewItemButtonClick);
     
 // create a scroll view that displays eight items at a time //
-    view = new ofxDatGuiScrollView("ScrollView #1", 8);
+    view = new ofxDatGuiScrollView("ScrollView #1", 2);
     view->setWidth(width);
     view->setPosition(addItem->getX(), addItem->getY() + addItem->getHeight() + 1);
     view->onScrollViewEvent(this, &ofApp::onScrollViewEvent);
